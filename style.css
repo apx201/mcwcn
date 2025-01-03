@@ -1,0 +1,282 @@
+	/* 页面背景 */
+	.backg {
+					background-color: #e6eff4;
+					margin: 4px;
+					width: 100%;
+					height: 100%;
+					padding-top: 15px;
+     padding-right: 15px;
+     padding-bottom: 15px;
+     padding-left: 15px;
+     z-index:9;
+     border: 4px solid #000;
+     border-color: #B5BEC3 #E6EFF4 #E6EFF4 #171717;
+	}
+/* 白模块 */
+.whboard {
+				background-color: white;
+				border: 1px solid #F8F9FB;
+				width: 90%;
+  /* box-shadow: 0px -4px #ffffff40, -4px 0px #00000040, 0px 4px #00000040, 4px 0px #00000040; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000;
+  outline: solid 1px #CFD3D4;
+  line-height: 2;
+  text-align: center;
+}
+.whp {
+				border-bottom: 1px solid #B4BDC2;
+				font-size: 12px;
+				text-align: left;
+}
+/* 网页背景 */
+	 body {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/Background-HiDPI.png');
+    background-repeat: repeat;
+    background-size: 90%;
+    z-index: 10;
+    background-image:
+     url('images/Header-background.png'),
+     url('images/Background-HiDPI.png');
+     background-repeat: repeat-x,
+     repeat;
+  } 
+/* 信息框 */
+.tips-sj {
+  display: flex; /* 使用flexbox布局 */
+  flex-direction: column; /* 子元素垂直排列 */
+  align-items: flex-start; /* 从左侧开始对齐 */
+  justify-content: center; /* 垂直居中 */
+  position: absolute;/*absolute值为悬浮*/
+  left: 50%;
+  transform: translateX(-45%); /* 使提示框水平居中 */
+  width: 350px;
+  min-height: 50px; /* 最小高度 */
+  background-color: #ffffff; /* 背景颜色为白色 */
+  border-radius: 0; /* 移除圆角 */
+  font-size: 12px; /* 字体大小 */
+  line-height: 0.5; /* 行高 */
+  color: #000000; /* 文本颜色为黑色 */
+  padding: 20px 10px 10px 46px; /* 内边距，左侧增加额外空间以避免与图标重叠 */
+  box-sizing: border-box; /* 包括内边距和边框在内的总宽度和高度 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+.tips-sj::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0; /* 将蓝色部分放置在左侧 */
+  width: 5px; /* 蓝色部分的宽度 */
+  height: 100%;
+  background-color: #3266EE; /* 蓝色背景 */
+}
+
+.tips-sj::after {
+  content: '🤓'; /* 标志 */
+  position: absolute;
+  top: 50%;
+  left: 10px; /* 与左侧的间距 */
+  transform: translateY(-50%); /* 垂直居中 */
+  font-size: 24px; /* 标志大小 */
+}
+/* -- */
+.tips-in {
+  display: flex; /* 使用flexbox布局 */
+  flex-direction: column; /* 子元素垂直排列 */
+  align-items: flex-start; /* 从左侧开始对齐 */
+  justify-content: center; /* 垂直居中 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-45%); /* 使提示框水平居中 */
+  width: 350px;
+  min-height: 50px; /* 最小高度 */
+  background-color: #FECCCB; /* 背景颜色为白色 */
+  border-radius: 0; /* 移除圆角 */
+  font-size: 12px; /* 字体大小 */
+  line-height: 0.5; /* 行高 */
+  color: #000000; /* 文本颜色为黑色 */
+  padding: 20px 10px 10px 46px; /* 内边距，左侧增加额外空间以避免与图标重叠 */
+  box-sizing: border-box; /* 包括内边距和边框在内的总宽度和高度 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+}
+
+.tips-in::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0; /* 将红色部分放置在左侧 */
+  width: 5px; /* 红色部分的宽度 */
+  height: 100%;
+  background-color: #EE4444; /* 红色背景 */
+}
+
+.tips-in::after {
+  content: '🥳'; /* 标志 */
+  position: absolute;
+  top: 50%;
+  left: 10px; /* 与左侧的间距 */
+  transform: translateY(-50%); /* 垂直居中 */
+  font-size: 24px; /* 标志大小 */
+}
+	
+	
+			@font-face {
+				font-family:'MinecraftTen-VGORe';
+				src: url(../../MinecraftTen-VGORe.ttf);
+			}
+			.MinecraftTen-VGORe{
+				font-family: 'MinecraftTen-VGORe';
+				font-size: 50px;
+				text-shadow: none;
+			}
+			@font-face {
+				font-family:'Minecraft字体';
+				src: url(../../Minecraft字体.ttf);
+			}
+			.Minecraft字体{
+				font-family: 'Minecraft字体';
+				font-size: 50px;
+				text-shadow: none;
+			}
+
+body {
+  background-color: #48494a;
+  font-family: "MC";
+}
+
+h1 {
+  font-family: '宋体', SimSun, serif; 
+  /*宋体*/
+  font-weight: normal;/* 加粗 */
+  font-size: 20px;
+  text-align: left; /* 靠左 */
+  border-bottom: 1px solid #B4BDC2;
+   /* 下划线 */
+  line-height: 1.2; /* 行高 */
+  padding-bottom: 2px; /* 文字下方空间 */
+}
+
+.p1 {
+				font-size:12px;
+}
+
+h2,
+h3 {
+				font-weight: hold;
+				font-size: 18px;
+				text-align: left;
+				line-height: 1;
+}
+
+h3 {
+				font-size:16px;
+}
+
+h4 {
+   font-size: 14px;
+}
+
+button {
+  font-family: "MC";
+  height: 48px;
+  background-color: #d0d1d4;
+  color: #000000;
+  padding-bottom: 6px;
+  border: 2px solid #1e1e1f;
+  box-shadow: inset 0 -4px #58585a, inset 3px 3px rgba(255, 255, 255, 0.6), inset -3px -7px rgba(255, 255, 255, 0.4);
+}
+
+button:hover {
+  background-color: #b1b2b5;
+  box-shadow: inset 0 -4px #58585a, inset 3px 3px rgba(255, 255, 255, 0.8), inset -3px -7px rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+  height: 44px;
+  margin-top: 4px;
+  padding-bottom: 2px;
+  background-color: #b1b2b5;
+  box-shadow: inset 3px 3px rgba(255, 255, 255, 0.8), inset -3px -3px rgba(255, 255, 255, 0.6);
+}
+
+.green_btn {
+    background-color: #3C8527;
+    color: #FFFFFF;
+    padding-bottom: 6px;
+    border: 2px solid #1E1E1F;
+    box-shadow: inset 0 -4px #1D4D13, inset 3px 3px rgba(255, 255, 255, 0.2), inset -3px -7px rgba(255, 255, 255, 0.1);
+}
+
+.green_btn:hover {
+    background-color: #2A641C;
+    box-shadow: inset 0 -4px #1D4D13, inset 3px 3px rgba(255, 255, 255, 0.4), inset -3px -7px rgba(255, 255, 255, 0.3);
+}
+
+.green_btn:active {
+    margin-top: 4px;
+    height: 44px;
+    padding-bottom: 2px;
+    background-color: #1D4D13;
+    box-shadow: inset 3px 3px rgba(255, 255, 255, 0.4), inset -3px -3px rgba(255, 255, 255, 0.3);
+}
+
+.title {
+  background-color: #48494a;
+  width: 90%;
+  /* box-shadow: 0px -4px #ffffff40, -4px 0px #00000040, 0px 4px #00000040, 4px 0px #00000040; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-top: 2px solid #ffffff40;
+  border-bottom: 2px solid #00000040;
+  border-left: 2px solid #00000040;
+  border-right: 2px solid #00000040;
+  color: #FFF;
+  line-height: 2;
+  text-align: center;
+}
+
+/* 画廊 */
+.draw {
+  display: flex; /* 使用flexbox布局 */
+  flex-direction: row; /* 横向排列 */
+  justify-content: flex-start; /* 从左开始排列 */
+  gap: 20px; /* 设置每个元素之间的间距 */
+}
+.drawd {
+display: flex; /* 使用flexbox布局 */
+  flex-direction: column; /* 子元素垂直排列 */
+  align-items: flex-start; /* 子元素靠左对齐 */
+  width: 100px; /* 设置box的宽度 */
+  margin-bottom: 30px;/*与下方文本的间距*/
+.picture {
+  background-color: white;
+				border: 1px solid #CFD3D4;
+				width: 100px;
+				height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000;
+  line-height: 2;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+.picture-img {
+  width: 100%; /* 图片宽度占满div */
+  height: 100%; /* 图片高度占满div */
+  object-fit: cover; /* 保持图片的宽高比，裁剪图片以适应div的大小 */
+}
+.picture-text {
+		font-size: 10px; /* 设置较小的字体大小 */
+  top: 20px;
+}
